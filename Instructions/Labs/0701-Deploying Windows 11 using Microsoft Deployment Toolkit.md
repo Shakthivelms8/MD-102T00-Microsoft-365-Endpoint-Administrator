@@ -204,62 +204,64 @@ You need to deploy a new Windows 11 virtual machine named SEA-WS4. You decide to
 
 18. Select **OK** to close the Settings dialog box.
 
-19. In Hyper-V Manager, select **SEA-WS4**, select **Connect**,  and then select **Start**. 
+19. In Hyper-V Manager, select **SEA-WS4**, select **Connect**,  and then select **Start**.
 
-20. As the computer starts press any key on the keyboard to invoke the MDT Deployment Wizard. Maximize the window as needed.
+    >**Note**: Incase if you see any warning such as "Not enough storage" turn off any other unused VM  and try again.
 
-21. On the **Welcome** page, select **Run the Deployment Wizard to install a new Operating System**.
+21. As the computer starts press any key on the keyboard to invoke the MDT Deployment Wizard. Maximize the window as needed.
 
-22. On the **Specify credentials for connecting to network shares** window, enter the following and then select **OK**:
+22. On the **Welcome** page, select **Run the Deployment Wizard to install a new Operating System**. It might take few seconds to load.
+
+23. On the **Specify credentials for connecting to network shares** window, enter the following and then select **OK**:
     - User Name: **demouser**
     - Password: **Password.1!!**
     - Domain: **Contoso**
 
-23. On the **Task Sequence** page, select **Deploy Windows 11 Enterprise** and then select **Next**.
+24. On the **Task Sequence** page, select **Deploy Windows 11 Enterprise** and then select **Next**.
 
-24. On the **Computer Details** page, next to **Computer name** enter **SEA-WS4** and then select **Next**.
+25. On the **Computer Details** page, next to **Computer name** enter **SEA-WS4** and then select **Next**.
 
-25. On the **Move Data and Settings** page, select **Next**.
+26. On the **Move Data and Settings** page, select **Next**.
 
-26. On the **User Data (Restore)** page, select **Next**.
+27. On the **User Data (Restore)** page, select **Next**.
 
-27. On the **Locale and Time** page, select **Next**.
+28. On the **Locale and Time** page, select **Next**.
 
-28. On the **Applications** page, select **Next**.
+29. On the **Applications** page, select **Next**.
 
-29. On the **Administrator Password** page, enter **Pa55w.rd** in both text boxes and then select **Next**.
+30. On the **Administrator Password** page, enter **Pa55w.rd** in both text boxes and then select **Next**.
 
-30. On the **Ready** page, select **Begin**. 
+31. On the **Ready** page, select **Begin**. 
 
     > The installation begins. It will take 15-20 minutes to complete and will reboot SEA-WS4 during the installation as needed.
 
-31. Switch to the **Deployment Workbench**.
+32. On Start menu under **Microsoft deployment toolkit** Select the **Deployment Workbench**.
 
-32. In the Deployment Workbench, expand **Deployment Shares**, and expand **MDT Deployment Share**.
+33. In the Deployment Workbench, expand **Deployment Shares**, and expand **MDT Deployment Share**.
 
-33. Select **Monitoring** and then in the details pane, double-click **SEA-WS4**.
+34. Select **Monitoring** and then in the details pane, double-click **SEA-WS4**.
 
     > Review the monitoring status during the deployment.
 
-34. Switch to **SEA-WS4**.
+35. Switch to **SEA-WS4**.
 
-35. After the installation is complete, the desktop will open and finalize the deployment. At the deployment summary, select **Finish**.
+36. After the installation is complete, the desktop will open and finalize the deployment. At the deployment summary, select **Finish**.
 
-36. Shut down **SEA-WS4** and close the Virtual Machine Connection window.
+37. Shut down **SEA-WS4** and close the Virtual Machine Connection window.
 
-37. In Hyper-V Manager, right-click **SEA-WS4** and then select **Settings**.
+38. In Hyper-V Manager, right-click **SEA-WS4** and then select **Settings**.
 
-38. In the **Settings for SEA-WS4**, expand **SCSI Controller** and then select **DVD Drive**.
+39. In the **Settings for SEA-WS4**, expand **SCSI Controller** and then select **DVD Drive**.
 
-39. In the details pane, under **Media**, select **None**, and then select **OK**.
+40. In the details pane, under **Media**, select **None**, and then select **OK**.
 
-40. Right-click **SEA-WS4** and then select **Checkpoint** to create a checkpoint of the current state of SEA-WS4.
+41. Right-click **SEA-WS4** and then select **Checkpoint** to create a checkpoint of the current state of SEA-WS4.
 
-41. On SEA-SVR2, close **Hyper-V Manager** and close the **Deployment Workbench**.
+42. On SEA-SVR2, close **Hyper-V Manager** and close the **Deployment Workbench**.
 
-42. Open **File Explorer**, right-click **DVD Drive E** and then select **Eject**.
+43. Open **File Explorer**, right-click **DVD Drive E** and then select **Eject**.
 
-43. Close **File Explorer**.
+44. Close **File Explorer**.
 
 **Results**: After completing this exercise, you will have successfully used the Microsoft Deployment Toolkit to create and deploy a Windows 11 workstation.
 
