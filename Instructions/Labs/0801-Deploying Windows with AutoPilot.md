@@ -321,7 +321,7 @@ Contoso IT is planning to roll out a deployment of new Windows 11 devices using 
 
 13. Switch to **SEA-SVR1**.
 
-14. In the Microsoft Entra admin center, select **Azure Active Directory**, select **Devices** and then select **All devices**. 
+14. In the Microsoft Entra admin center, select **Identity**, select **Devices** and then select **All devices**. 
 
     > Note that the new device displays with an icon that indicates an Autopilot device. Also note that the Join Type is **Azure AD joined** with Aaron Nicholls as the owner.
 
