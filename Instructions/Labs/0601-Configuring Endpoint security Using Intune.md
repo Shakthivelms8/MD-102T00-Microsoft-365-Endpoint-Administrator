@@ -83,8 +83,8 @@ Settings will be verified by testing on an enrolled device, SEA-WS1 and a non-en
    - Allow scanning of all downloaded files and attachments: **Allowed**
    - Allow Realtime Monitoring: **Allowed**
    - Check For Signatures Before Running Scan: **Enabled**
-   - Days to Retain Cleaned Malware: **60**
-   - Schedule Quick Scan Time: **60** (represents 1:00AM)
+   - Days to Retain Cleaned Malware: **Enable** and give the value **60**
+   - Schedule Quick Scan Time: **Enable** and give the value **60** (represents 1:00AM)
    - Submit samples consent: **Send safe samples automatically**
 
 6. On the **Configuration settings** tab, select **Next** twice.
@@ -111,19 +111,21 @@ Settings will be verified by testing on an enrolled device, SEA-WS1 and a non-en
 
 2. If necessary, sign in as **Contoso\Administrator** with the password of **Pa55w.rd**.
 
-3. On **SEA-CL1**, select **Start**, type **Windows Security**, and then under the Windows Security icon select **Open**.
+   >**Note**: Incase if you see the warning "Not enough memory" Go-to hyper-v manager in task bar and right click on any un used VM  and turn it off.
+
+4. On **SEA-CL1**, select **Start**, type **Windows Security**, and then under the Windows Security icon select **Open**.
 
    > Notice that all security options are displayed. This is because SEA-CL1 is not enrolled to Intune.
 
-4. Close **Windows Security** and sign out of SEA-CL1.
+5. Close **Windows Security** and sign out of SEA-CL1.
 
-5. Switch to **SEA-WS1**, and sign in as as **Aaron Nicholls** with the PIN: **102938**.
+6. Switch to **SEA-WS1**, and sign in as as **Aaron Nicholls** with the PIN: **102938** Or password **Pa55w.rd1234!** .
 
-6. Select **Start**, type **Windows Security**, and then under the Windows Security icon select **Open**.
+7. Select **Start**, type **Windows Security**, and then under the Windows Security icon select **Open**.
 
    > Notice that all of the restricted areas as configured in the Intune policy are not displayed. SEA-WS1 is enrolled in Intune, which has applied the security settings.
 
-7. Close **Windows Security** and sign out of **SEA-WS1**.
+8. Close **Windows Security** and sign out of **SEA-WS1**.
 
 **Results**: After completing this exercise, you will have successfully created and applied a policy to configure Microsoft Defender for managed devices in Intune.
 
